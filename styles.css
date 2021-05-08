@@ -1,100 +1,105 @@
-body{
+body {
   height: 100vh;
   background-color: hsl(233, 47%, 7%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-
-.card{
+.card {
   width: 70%;
   height: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   background-color: hsl(244, 38%, 16%);
   border-radius: 10px;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
   overflow: hidden;
-
+  margin: auto;
 }
 
-.left-half{
-font-family: "Inter", sans-serif;
-
-margin: 8% 20% auto 12%;
-
-}
-.text-container{
-
+.left-half {
+  font-family: "Inter", sans-serif;
+  margin: 8% 20% auto 12%;
 }
 
-.title{
- color: hsl(0, 0%, 100%);
- font-weight: 700;
- font-size: 2.5rem;
- margin-bottom: 35px;
- margin-top: 30px;
+.text-container {}
+
+.title {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+  margin-top: 30px;
 }
 
-.accent{
+.accent {
   color: hsl(277, 64%, 61%);
 }
 
-.text{
-color:hsla(0, 0%, 100%, 0.75);
-font-weight: 400;
-font-size: 1.15rem;
-line-height: 1.6;
-
+.text {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.6;
 }
 
-.stats{
-margin-top: 90px;
-
-
+.stats {
+  margin-top: 90px;
 }
-.stats-numbers{
+
+.stats-numbers {
   color: hsl(0, 0%, 100%);
   font-weight: 700;
   font-size: 1.6rem;
   display: grid;
-  grid-template-columns: repeat(3,33%);
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.stats p{
+.stats p {
   margin: 2px 0;
-
 }
 
-
-.stats-headings{
+.stats-headings {
   color: hsla(0, 0%, 100%, 0.6);
   font-family: "Lexend Deca", sans-serif;
   font-size: 0.9rem;
   display: grid;
-  grid-template-columns: repeat(3,33%);
-
+  grid-template-columns: repeat(3, 1fr);
 }
 
-.right-half{
+.right-half {
   position: relative;
 }
-.image{
+
+.image {
   width: 100%;
   height: 100%;
   position: absolute;
-
 }
-.img-filter{
+
+.img-filter {
   width: 100%;
   height: 100%;
   overflow: hidden;
   background-color: hsla(274, 99%, 35%, 0.5);
   z-index: 2;
   position: absolute;
-
 }
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    transform: rotate(90deg);
+    width: 90vw;
+  }
+}
