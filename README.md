@@ -19,10 +19,10 @@
 
 ### The challenge
 
-Desktop:
+####Desktop:
 ![desktop-design](desktop-design.jpg)
 
-Mobile:
+####Mobile:
 ![mobile-design](mobile-design.jpg)
 
 ### Screenshot
@@ -54,4 +54,4 @@ Mobile:
 ## Author
 
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@DarioMelia](https://www.frontendmentor.io/profile/DarioMelia)
